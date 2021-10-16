@@ -123,6 +123,9 @@ img {
     padding: 1rem;
     border: #ccc 1px dotted;
     margin: 0.7rem 0;
+    /* AYOUB EDITS */
+    box-shadow: 0 2px 15px 0 rgba(30, 30, 30, 0.1);
+    border-radius: 8px;
 }
 
 
@@ -234,6 +237,9 @@ img {
     padding: 0.4rem 1.3rem;
     font-size: 1rem;
     border: none;
+    /* AYOUB Edits */
+    border-radius: 4px;
+    /* =========== */
     cursor: pointer;
     margin-right: 0.5rem;
     transition: opacity 0.2s ease-in;
