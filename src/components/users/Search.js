@@ -20,7 +20,7 @@ const Search = () => {
     e.preventDefault();
 
     if (text === "") {
-      showAlert("Please enter something", "light");
+      showAlert("Please enter something", "danger");
     } else {
       searchUsers(text);
       setText("");
@@ -29,11 +29,12 @@ const Search = () => {
 
   return (
     <div>
+      <h2 className="text-center text-dark">Search any GitHubber in mind</h2>
       <form onSubmit={onSubmit} className="form">
         <input
           type="text"
           name="text"
-          placeholder="Search Users..."
+          placeholder="Username"
           value={text}
           onChange={onChange}
         />
@@ -55,7 +56,7 @@ const Search = () => {
             }}
           />
           <button
-            className="btn btn-light btn-block"
+            className="btn btn-primary btn-block"
             style={{ marginBlockEnd: "1.5rem" }}
             onClick={clearUsers}
           >
